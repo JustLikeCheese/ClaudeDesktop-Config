@@ -13,7 +13,7 @@
 ```json
 {
   "inferenceProvider": "gateway",
-  "inferenceGatewayBaseUrl": "https://your-gateway.example.com",
+  "inferenceGatewayBaseUrl": "https://xxxxxxxx",
   "inferenceCredentialKind": "static",
   "inferenceGatewayApiKey": "sk-xxxxxxxx",
   "modelDiscoveryEnabled": false,
@@ -33,6 +33,7 @@
     { "name": "claude-fable-5", "labelOverride": "Claude Fable 5", "anthropicFamilyTier": "fable", "supports1m": true }
   ],
   "coworkEgressAllowedHosts": ["*"],
+  "disableDeploymentModeChooser": true,
   "disableEssentialTelemetry": true,
   "disableNonessentialTelemetry": true,
   "disableNonessentialServices": true,
@@ -52,7 +53,7 @@
   "$schemaVersion": 2,
   "inference": {
     "provider": "gateway",
-    "baseUrl": "https://your-gateway.example.com",
+    "baseUrl": "https://xxxxxxxx",
     "credential": {
       "kind": "static",
       "apiKey": "sk-xxxxxxxx"
@@ -76,6 +77,9 @@
   },
   "workspace": {
     "allowedEgressHosts": ["*"]
+  },
+  "authentication": {
+    "disableClaudeAiSignIn": true
   },
   "telemetry": {
     "disableEssential": true,
